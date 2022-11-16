@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.automation.runner.GymTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-U223GGUJ" time="0.0">
+  <properties/>
+  <system-out><![CDATA[Feature: Search postcode
+
+  Scenario: I search my postocde                                ?[90m# src/test/resources/features/userSearchesNearestGym.feature:3?[0m
+    ?[32mGiven ?[0m?[32mI go to the website "?[0m?[32m?[1mhttps://www.nuffieldhealth.com/?[0m?[32m"?[0m ?[90m# SearchSteps.i_go_to_website(String)?[0m
+    ?[31mAnd ?[0m?[31mI click on "?[0m?[31m?[1mGym tab?[0m?[31m"?[0m                                    ?[90m# SearchSteps.i_click_on(String)?[0m
+      ?[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="0000014c-faaa-d922-a7ed-fbef5a7f0000" href="#" class="nav__link">...</a> is not clickable at point (702, 66). Other element would receive the click: <div id="ccc-overlay"></div>
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-U223GGUJ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0-332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Jamzy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 60a6eb5585da78a6d941cac802a9a784
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.automation.actions.CommandActions.clickButton(CommandActions.java:28)
+	at com.automation.steps.SearchSteps.i_click_on(SearchSteps.java:37)
+	at ?.I click on "Gym tab"(file:src/test/resources/features/userSearchesNearestGym.feature:5)
+?[0m
+    ?[36mAnd ?[0m?[36mI find and click on the link "?[0m?[36m?[1mjoin a gym?[0m?[36m"?[0m               ?[90m# SearchSteps.i_find_and_click_on_the_link(String)?[0m
+    ?[36mAnd ?[0m?[36mI input "?[0m?[36m?[1mSE1 9AA?[0m?[36m" to the field "?[0m?[36m?[1mSearch Gym?[0m?[36m"?[0m             ?[90m# SearchSteps.i_input_to_the_field(String,String)?[0m
+    ?[36mAnd ?[0m?[36mI can see the link with text "?[0m?[36m?[1marrange a visit?[0m?[36m"?[0m          ?[90m# SearchSteps.i_can_see_the_link_with_text(String)?[0m
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/userSearchesNearestGym.feature:3 ?[0m# I search my postocde
+
+1 Scenarios (?[31m1 failed?[0m)
+5 Steps (?[31m1 failed?[0m, ?[36m3 skipped?[0m, ?[32m1 passed?[0m)
+0m12.967s
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="0000014c-faaa-d922-a7ed-fbef5a7f0000" href="#" class="nav__link">...</a> is not clickable at point (702, 66). Other element would receive the click: <div id="ccc-overlay"></div>
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-U223GGUJ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0-332'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Jamzy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 60a6eb5585da78a6d941cac802a9a784
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.automation.actions.CommandActions.clickButton(CommandActions.java:28)
+	at com.automation.steps.SearchSteps.i_click_on(SearchSteps.java:37)
+	at ?.I click on "Gym tab"(file:src/test/resources/features/userSearchesNearestGym.feature:5)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
